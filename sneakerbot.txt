@@ -1,0 +1,130 @@
+sneakerbot
+
+for automation - check out selenium, python 'mechanize' library
+for inspiration - check out high frequency trading and how its done
+
+1/23/17: THE REAL DEAL
+source: ‘slides.com/roytenberg/ballad#/
+
+NAIVE SOLUTION: Selenium - maybe start with this?
+
+ADVANCED SOLUTION: DIRECT HTTP REQUEST to server
+TOOLS: python + wireshark + burp suite
+STEPS:
+
+1) Go to product page of shoes to buy
+2) Startup WIRESHARK
+3) SPAM fake checkout credentials?
+4) find Site destination IP
+5) Startup BURP SUITE
+6) Spam More?
+7) Check ‘content-type’/ observe Intercepted HTTP request ‘POST’
+8) Write python code to send this request directly
+
+OPTIMIZATIONS:
+	CAPTCHA bypassing
+	multithreading
+	etc
+
+==============================================================================
+
+alt ideas - swell forecasting
+clear your mind app
+
+important for sneaker bot
+Request URL:http://www.footlocker.com/catalog/miniAddToCart.cfm?secure=0&
+Request Method:POST
+
+source form data:
+storeCostOfGoods=0.00&lineItemId=&model=266161&requestKey=AA6BFEF4Fp41F0A3&hasXYPromo=false&sameDayDeliveryConfig=false&sku=BB4489&the_model_nbr=266161&model_name=adidas+Ultra+Boost+Uncaged+-+Men's&skipISA=no&selectedPrice=%24179.99&qty=1&size=11.0&fulfillmentType=SHIP_TO_HOME&storeNumber=00000&coreMetricsDo=true&coreMetricsCategory=Add+to+Wish+List+-+PDP&quantity=1&inlineAddToCart=1
+combine request URL with source form data to send dfull request
+example:
+http://www.footlocker.com/catalog/miniAddToCart.cfm?secure=0&requestKey=C33A4AEEC4pEDC9C&qty=1&size=11.0&the_model_nbr=212048&sku=S80028&storeNumber=00000&fulfillmentType=SHIP_FROM_STORE&storeCostOfGoods=0.00&inlineAddToCart=0&coreMetricsCategory=blank&hasXYPromo=false&BV_TrackingTag_Review_Display_Sort=http%3A%2F%2Ffootlocker.ugc.bazaarvoice.com%2F8001%2F212048%2Freviews.djs%3Fformat%3Dembeddedhtml&BV_TrackingTag_QA_Display_Sort=&rdo_deliveryMethod=shiptohome&inlineAddToCart=1
+
+
+CHECKOUT CREDS:
+https://www.footlocker.com/checkout/eventGateway?&method=validateReviewPane
+Request Method:POST
+Remote Address:104.79.131.62:443
+form data (parsed):
+verifiedCheckoutData:{"maxVisitedPane":"billAddressPane","billMyAddressBookIndex":"-1","addressNeedsVerification":true,"billFirstName":"","billLastName":"","billAddress1":"","billAddress2":"","billCity":"","billState":"","billProvince":"","billPostalCode":"","billHomePhone":"","billMobilePhone":"","billCountry":"US","billEmailAddress":"","billConfirmEmail":"","billAddrIsPhysical":true,"billSubscribePhone":false,"billAbbreviatedAddress":false,"shipUpdateDefaultAddress":false,"VIPNumber":"","accountBillAddress":{"billMyAddressBookIndex":-1},"selectedBillAddress":{},"billMyAddressBook":[],"updateBillingForBML":false}
+
+
+requestKey:1769A94457D9uFA0
+hbg:ig+o8fott1HNzHfZ7s5E3DwceH+oidAZkIDI40ZsfwcNq49ytx2jvsqgDSiT7~~~n+I6L9mQEHmO7p
+vhfmXvCg6A==
+addressBookEnabled:true
+bb_device_id:
+loginHeaderEmailAddress:
+loginHeaderPassword:
+loginPaneNewEmailAddress:
+loginPaneConfirmNewEmailAddress:
+loginPaneEmailAddress:
+loginPanePassword:
+billAddressType:new
+billAddressInputType:single
+billAPOFPOCountry:US
+bill-country:US
+billMyAddressBookIndex:-1
+bill-fname:asdf
+bill-lname:fdsa
+bill-address1:23 asdf
+bill-address2:
+bill-postal:12345
+bill-city:SCHENECTADY
+billAPOFPO-region:
+bill-state:NY
+bill-province:
+billAPOFPO-state:
+billAPOFPO-postal:
+bill-tel:650 912 3456
+email:asf@as.com
+billConfirmEmail:asf@as.com
+billPaneShipToBillingAddress:true
+shipAddressType:different
+shipAddressInputType:single
+shipAPOFPOCountry:US
+ship-country:US
+shipMyAddressBookIndex:-1
+shipToStore:false
+ship-fname:
+ship-lname:
+ship-address1:
+ship-address2:
+ship-postal:
+ship-city:
+shipAPOFPO-region:
+ship-state:
+ship-province:
+shipAPOFPO-state:
+shipAPOFPO-postal:
+ship-tel:
+shipMethodCodeS2S:
+shipMethodCode:Z
+storePickupInputPostalCode:
+promoType:
+CPCOrSourceCode:
+payMethodPanePayType:CC
+payMethodPanestoredCCCardNumber:CC
+CardNumber:4190 0293 1234 1234
+CardExpireDateMM:01
+CardExpireDateYY:21
+CardCCV:
+payMethodPaneStoredType:
+payMethodPaneConfirmCardNumber:
+payMethodPaneStoredCCExpireMonth:
+payMethodPaneStoredCCExpireYear:
+payMethodPaneCardType:visa
+payMethodPaneCardNumber:4190029312341234
+payMethodPaneExpireMonth:01
+payMethodPaneExpireYear:21
+payMethodPaneCVV:
+payMethodPaneStoredCCCVV:
+giftCardCode_1:
+giftCardPin_1:
+fieldCount:1
+billMobilePhone:
+
+form data (Raw):
+
+verifiedCheckoutData=%7B%22maxVisitedPane%22%3A%22orderReviewPane%22%2C%22billMyAddressBookIndex%22%3A%22-1%22%2C%22addressNeedsVerification%22%3Afalse%2C%22billFirstName%22%3A%22asdf%22%2C%22billLastName%22%3A%22fdsa%22%2C%22billAddress1%22%3A%2223+asdf%22%2C%22billAddress2%22%3A%22%22%2C%22billCity%22%3A%22SCHENECTADY%22%2C%22billState%22%3A%22NY%22%2C%22billProvince%22%3A%22%22%2C%22billPostalCode%22%3A%2212345%22%2C%22billHomePhone%22%3A%22650+912+3456%22%2C%22billMobilePhone%22%3A%22%22%2C%22billCountry%22%3A%22US%22%2C%22billEmailAddress%22%3A%22asf%40as.com%22%2C%22billConfirmEmail%22%3A%22asf%40as.com%22%2C%22billAddrIsPhysical%22%3Atrue%2C%22billSubscribePhone%22%3Afalse%2C%22billAbbreviatedAddress%22%3Afalse%2C%22shipUpdateDefaultAddress%22%3Afalse%2C%22VIPNumber%22%3A%22%22%2C%22accountBillAddress%22%3A%7B%22billMyAddressBookIndex%22%3A-1%7D%2C%22selectedBillAddress%22%3A%7B%7D%2C%22billMyAddressBook%22%3A%5B%5D%2C%22updateBillingForBML%22%3Afalse%2C%22shipMyAddressBookIndex%22%3A-1%2C%22useBillingAsShipping%22%3Atrue%2C%22shipFirstName%22%3A%22asdf%22%2C%22shipLastName%22%3A%22fdsa%22%2C%22shipAddress1%22%3A%2223+asdf%22%2C%22shipAddress2%22%3A%22%22%2C%22shipCity%22%3A%22SCHENECTADY%22%2C%22shipState%22%3A%22NY%22%2C%22shipProvince%22%3A%22%22%2C%22shipPostalCode%22%3A%2212345%22%2C%22shipHomePhone%22%3A%22650+912+3456%22%2C%22shipMobilePhone%22%3A%22%22%2C%22shipCountry%22%3A%22US%22%2C%22shipHash%22%3A%223A515E01627DF357C3E443E0C926A96D%22%2C%22shipMultiple%22%3Afalse%2C%22isShipToStoreEligibleCheckout%22%3Atrue%2C%22shipToStore%22%3Afalse%2C%22isMultipleAddressEligible%22%3Afalse%2C%22shipAbbreviatedAddress%22%3Afalse%2C%22selectedStore%22%3A%7B%7D%2C%22accountShipAddress%22%3A%7B%22shipMyAddressBookIndex%22%3A-1%7D%2C%22selectedShipAddress%22%3A%7B%7D%2C%22shipMyAddressBook%22%3A%5B%5D%2C%22shipMethodCode%22%3A%22Z%22%2C%22shipMethodName%22%3A%225-6+Business+Days%22%2C%22shipMethodPrice%22%3A%22%240.00%22%2C%22shipDeliveryEstimate%22%3A%22%22%2C%22shipMethodCodeSDD%22%3A%22%22%2C%22shipMethodNameSDD%22%3A%22%22%2C%22shipMethodPriceSDD%22%3A%22%240.00%22%2C%22shipDeliveryEstimateSDD%22%3A%22%22%2C%22shipMethodCodeS2S%22%3A%22%22%2C%22shipMethodNameS2S%22%3A%22%22%2C%22shipMethodPriceS2S%22%3A%22%240.00%22%2C%22shipDeliveryEstimateS2S%22%3A%22%22%2C%22shipMethodCodeSFS%22%3A%22%22%2C%22shipMethodNameSFS%22%3A%22%22%2C%22shipMethodPriceSFS%22%3A%22%240.00%22%2C%22shipDeliveryEstimateSFS%22%3A%22%22%2C%22homeDeliveryPrice%22%3A%22%240.00%22%2C%22overallHomeDeliveryPrice%22%3A%22%240.00%22%2C%22aggregatedDeliveryPrice%22%3A%22FREE%22%2C%22aggregatedDeliveryLabel%22%3A%22%22%2C%22showGiftBoxOption%22%3Atrue%2C%22addGiftBox%22%3Afalse%2C%22giftBoxPrice%22%3A%22%243.99%22%2C%22useGiftReceipt%22%3Afalse%2C%22showGiftOptions%22%3Atrue%2C%22loyaltyMessageText%22%3Afalse%2C%22showLoyaltyRenewalMessage%22%3Afalse%2C%22pickupPersonFirstName%22%3A%22asdf%22%2C%22pickupPersonLastName%22%3A%22fdsa%22%2C%22preferredLanguage%22%3A%22%22%2C%22advanceToConfirm%22%3Afalse%2C%22payType%22%3A%22CREDIT_CARD%22%2C%22payPalToken%22%3A%22%22%2C%22payPalInContext%22%3Atrue%2C%22payPalMerchantId%22%3A%22%22%2C%22payPalStage%22%3A%22%22%2C%22payPalPaymentAllowed%22%3Atrue%2C%22payMethodPaneExpireMonth%22%3A%2201%22%2C%22payMethodPaneExpireYear%22%3A%2221%22%2C%22payMethodPaneCardNumber%22%3A%224190029312341234%22%2C%22payMethodPaneCardType%22%3A%22visa%22%2C%22payMethodPaneLastFour%22%3A%221234%22%2C%22payMethodPanePayMethodName%22%3A%22Visa%22%2C%22payMethodPanePurchaseOrder%22%3A%22%22%2C%22payMethodPanePurchaseOrderNewCustomer%22%3A%22%22%2C%22payMethodPaneCVV%22%3A%22100%22%2C%22creditcardPaymentAllowed%22%3Atrue%2C%22billMeLaterStage%22%3A%22%22%2C%22BMLPaymentAllowed%22%3Afalse%2C%22displayBMLPromotion%22%3Afalse%2C%22POPaymentAllowed%22%3Afalse%2C%22promoType%22%3A%22%22%2C%22promoCode%22%3A%22%22%2C%22sourceCode%22%3A%22INETSRC%22%2C%22sourceCodeDescription%22%3A%22%22%2C%22sourceCodeCartDisplayText%22%3A%22%22%2C%22GIFTCARDCODE1%22%3A%22%22%2C%22GIFTCARDPIN1%22%3A%22%22%2C%22GIFTCARDUSED1%22%3A%22%22%2C%22GIFTCARDCODE2%22%3A%22%22%2C%22GIFTCARDPIN2%22%3A%22%22%2C%22GIFTCARDUSED2%22%3A%22%22%2C%22GIFTCARDCODE3%22%3A%22%22%2C%22GIFTCARDPIN3%22%3A%22%22%2C%22GIFTCARDUSED3%22%3A%22%22%2C%22GIFTCARDCODE4%22%3A%22%22%2C%22GIFTCARDPIN4%22%3A%22%22%2C%22GIFTCARDUSED4%22%3A%22%22%2C%22GIFTCARDCODE5%22%3A%22%22%2C%22GIFTCARDPIN5%22%3A%22%22%2C%22GIFTCARDUSED5%22%3A%22%22%2C%22rewardBarCode%22%3A%22%22%2C%22giftCardsEmpty%22%3Atrue%2C%22sourceCodesEmpty%22%3Atrue%2C%22emptyCart%22%3Afalse%2C%22ContingencyQueue%22%3A%22%22%2C%22lgr%22%3A%22kPWo%2B3EXVu7HUURTQ7jHUNFlGRZezsIMXBmuuF%2FBT4y4XtMFiPjEqw%3D%3D%22%2C%22displayEmailOptIn%22%3Afalse%2C%22billSubscribeEmail%22%3Afalse%2C%22billReceiveNewsletter%22%3Afalse%2C%22billFavoriteTeams%22%3Afalse%2C%22paypalEmailAddress%22%3A%22%22%2C%22displaySheerIdIframe%22%3Atrue%2C%22displayCmsEntry%22%3A%22%22%2C%22payMethodPaneUserGotStoredCC%22%3Afalse%2C%22payMethodPaneHasStoredCC%22%3Afalse%2C%22payMethodPaneUsedStoredCC%22%3Afalse%2C%22payMethodPaneSavedNewCC%22%3Afalse%2C%22selectedCreditCard%22%3A%7B%7D%2C%22payMethodPaneHasCVV%22%3Atrue%2C%22payMethodPaneCVVAF%22%3A%220%22%7D&requestKey=1769A94457D9uFA0&hbg=ig%2Bo8fott1HNzHfZ7s5E3DwceH%2BoidAZkIDI40ZsfwcNq49ytx2jvsqgDSiT7~~~n%2BI6L9mQEHmO7p%0D%0AvhfmXvCg6A%3D%3D&addressBookEnabled=true&bb_device_id=&loginHeaderEmailAddress=&loginHeaderPassword=&loginPaneNewEmailAddress=&loginPaneConfirmNewEmailAddress=&loginPaneEmailAddress=&loginPanePassword=&billAddressType=new&billAddressInputType=single&billAPOFPOCountry=US&bill-country=US&billMyAddressBookIndex=-1&bill-fname=asdf&bill-lname=fdsa&bill-address1=23+asdf&bill-address2=&bill-postal=12345&bill-city=SCHENECTADY&billAPOFPO-region=&bill-state=NY&bill-province=&billAPOFPO-state=&billAPOFPO-postal=&bill-tel=650+912+3456&email=asf%40as.com&billConfirmEmail=asf%40as.com&billPaneShipToBillingAddress=true&shipAddressType=different&shipAddressInputType=single&shipAPOFPOCountry=US&ship-country=US&shipMyAddressBookIndex=-1&shipToStore=false&ship-fname=&ship-lname=&ship-address1=&ship-address2=&ship-postal=&ship-city=&shipAPOFPO-region=&ship-state=&ship-province=&shipAPOFPO-state=&shipAPOFPO-postal=&ship-tel=&shipMethodCodeS2S=&shipMethodCode=Z&storePickupInputPostalCode=&promoType=&CPCOrSourceCode=&payMethodPanePayType=CC&payMethodPanestoredCCCardNumber=CC&CardNumber=4190+0293+1234+1234&CardExpireDateMM=01&CardExpireDateYY=21&CardCCV=&payMethodPaneStoredType=&payMethodPaneConfirmCardNumber=&payMethodPaneStoredCCExpireMonth=&payMethodPaneStoredCCExpireYear=&payMethodPaneCardType=visa&payMethodPaneCardNumber=4190029312341234&payMethodPaneExpireMonth=01&payMethodPaneExpireYear=21&payMethodPaneCVV=&payMethodPaneStoredCCCVV=&giftCardCode_1=&giftCardPin_1=&fieldCount=1&billMobilePhone=
