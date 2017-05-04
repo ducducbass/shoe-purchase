@@ -22,20 +22,27 @@ def main():
 
 def addToCart(url):
     base_url = "http://www.footlocker.com/"
-    req_headers = {
-        'User-Agent': "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1"
-    }
     resp_headers = {
         'Accept': '*/*',
+        'Connection': "keep-alive",
         'X-Requested-With': 'XMLHttpRequest',
         'Origin': base_url,
         'Referer': url,
         'Accept-Encoding': 'gzip, deflate',
-        'User-Agent': "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1"
+        'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
     }
     with requests.Session() as session:
-        r = session.get(url,headers=req_headers)
-        cookies = dict(r.cookies)
+        session.headers.update({ # soething about this changed it...
+            'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, sdch',
+            'Accept-Language': 'en-US,en;q=0.8,da;q=0.6',
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'DNT': '1'
+        })
+        r = session.get(url)
+        print r.headers
+        # cookies = dict(r.cookies) #
         html = r.text
         referer = r.url
         soup = BeautifulSoup(html,"html.parser")
@@ -57,7 +64,7 @@ def addToCart(url):
                  'storeCostOfGoods':'0.00',
                  'lineItemId':'',
                  'model': model,
-                 'requestKey': 'F28D6gBB28EE28FE',#requestKey,
+                 'requestKey': requestKey,#requestKey,
                  'hasXYPromo':'false',
                  'sameDayDeliveryConfig':'false',
                  'sku':sku,
@@ -75,19 +82,19 @@ def addToCart(url):
                  'inlineAddToCart':'1'
                  }
 
-        print requestKey
-        response = session.post('http://www.footlocker.com/catalog/miniAddToCart.cfm?secure=0&', headers=resp_headers, data=load, cookies=cookies)
+        print 'requestKey: {0}'.format(requestKey)
+        response = session.post('http://www.footlocker.com/catalog/miniAddToCart.cfm?secure=0&', headers=resp_headers, data=load)
         response_text = BeautifulSoup(response.text, "html.parser")
         print "Status Code: {0}".format(response.status_code)
         if response.status_code == 500:
-            # print "ERROR: {0}".format([err.string.encode("utf8") for err in response_text.find_all("span", class_='error')])
+            print "ERROR: {0}".format([err.string.encode("utf8") for err in response_text.find_all("span", class_='error')])
             print response.request.headers
         elif response.status_code == 200:
-            print response_text
-            print 'great success'
+            # print response_text
+            print "{0} - successfully added to cart".format(name)
         else:
             print response.status_code
             print response_text
-    return
+    return 1
 
 main()
