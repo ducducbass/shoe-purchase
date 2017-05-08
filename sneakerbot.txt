@@ -128,3 +128,87 @@ billMobilePhone:
 form data (Raw):
 
 verifiedCheckoutData=%7B%22maxVisitedPane%22%3A%22orderReviewPane%22%2C%22billMyAddressBookIndex%22%3A%22-1%22%2C%22addressNeedsVerification%22%3Afalse%2C%22billFirstName%22%3A%22asdf%22%2C%22billLastName%22%3A%22fdsa%22%2C%22billAddress1%22%3A%2223+asdf%22%2C%22billAddress2%22%3A%22%22%2C%22billCity%22%3A%22SCHENECTADY%22%2C%22billState%22%3A%22NY%22%2C%22billProvince%22%3A%22%22%2C%22billPostalCode%22%3A%2212345%22%2C%22billHomePhone%22%3A%22650+912+3456%22%2C%22billMobilePhone%22%3A%22%22%2C%22billCountry%22%3A%22US%22%2C%22billEmailAddress%22%3A%22asf%40as.com%22%2C%22billConfirmEmail%22%3A%22asf%40as.com%22%2C%22billAddrIsPhysical%22%3Atrue%2C%22billSubscribePhone%22%3Afalse%2C%22billAbbreviatedAddress%22%3Afalse%2C%22shipUpdateDefaultAddress%22%3Afalse%2C%22VIPNumber%22%3A%22%22%2C%22accountBillAddress%22%3A%7B%22billMyAddressBookIndex%22%3A-1%7D%2C%22selectedBillAddress%22%3A%7B%7D%2C%22billMyAddressBook%22%3A%5B%5D%2C%22updateBillingForBML%22%3Afalse%2C%22shipMyAddressBookIndex%22%3A-1%2C%22useBillingAsShipping%22%3Atrue%2C%22shipFirstName%22%3A%22asdf%22%2C%22shipLastName%22%3A%22fdsa%22%2C%22shipAddress1%22%3A%2223+asdf%22%2C%22shipAddress2%22%3A%22%22%2C%22shipCity%22%3A%22SCHENECTADY%22%2C%22shipState%22%3A%22NY%22%2C%22shipProvince%22%3A%22%22%2C%22shipPostalCode%22%3A%2212345%22%2C%22shipHomePhone%22%3A%22650+912+3456%22%2C%22shipMobilePhone%22%3A%22%22%2C%22shipCountry%22%3A%22US%22%2C%22shipHash%22%3A%223A515E01627DF357C3E443E0C926A96D%22%2C%22shipMultiple%22%3Afalse%2C%22isShipToStoreEligibleCheckout%22%3Atrue%2C%22shipToStore%22%3Afalse%2C%22isMultipleAddressEligible%22%3Afalse%2C%22shipAbbreviatedAddress%22%3Afalse%2C%22selectedStore%22%3A%7B%7D%2C%22accountShipAddress%22%3A%7B%22shipMyAddressBookIndex%22%3A-1%7D%2C%22selectedShipAddress%22%3A%7B%7D%2C%22shipMyAddressBook%22%3A%5B%5D%2C%22shipMethodCode%22%3A%22Z%22%2C%22shipMethodName%22%3A%225-6+Business+Days%22%2C%22shipMethodPrice%22%3A%22%240.00%22%2C%22shipDeliveryEstimate%22%3A%22%22%2C%22shipMethodCodeSDD%22%3A%22%22%2C%22shipMethodNameSDD%22%3A%22%22%2C%22shipMethodPriceSDD%22%3A%22%240.00%22%2C%22shipDeliveryEstimateSDD%22%3A%22%22%2C%22shipMethodCodeS2S%22%3A%22%22%2C%22shipMethodNameS2S%22%3A%22%22%2C%22shipMethodPriceS2S%22%3A%22%240.00%22%2C%22shipDeliveryEstimateS2S%22%3A%22%22%2C%22shipMethodCodeSFS%22%3A%22%22%2C%22shipMethodNameSFS%22%3A%22%22%2C%22shipMethodPriceSFS%22%3A%22%240.00%22%2C%22shipDeliveryEstimateSFS%22%3A%22%22%2C%22homeDeliveryPrice%22%3A%22%240.00%22%2C%22overallHomeDeliveryPrice%22%3A%22%240.00%22%2C%22aggregatedDeliveryPrice%22%3A%22FREE%22%2C%22aggregatedDeliveryLabel%22%3A%22%22%2C%22showGiftBoxOption%22%3Atrue%2C%22addGiftBox%22%3Afalse%2C%22giftBoxPrice%22%3A%22%243.99%22%2C%22useGiftReceipt%22%3Afalse%2C%22showGiftOptions%22%3Atrue%2C%22loyaltyMessageText%22%3Afalse%2C%22showLoyaltyRenewalMessage%22%3Afalse%2C%22pickupPersonFirstName%22%3A%22asdf%22%2C%22pickupPersonLastName%22%3A%22fdsa%22%2C%22preferredLanguage%22%3A%22%22%2C%22advanceToConfirm%22%3Afalse%2C%22payType%22%3A%22CREDIT_CARD%22%2C%22payPalToken%22%3A%22%22%2C%22payPalInContext%22%3Atrue%2C%22payPalMerchantId%22%3A%22%22%2C%22payPalStage%22%3A%22%22%2C%22payPalPaymentAllowed%22%3Atrue%2C%22payMethodPaneExpireMonth%22%3A%2201%22%2C%22payMethodPaneExpireYear%22%3A%2221%22%2C%22payMethodPaneCardNumber%22%3A%224190029312341234%22%2C%22payMethodPaneCardType%22%3A%22visa%22%2C%22payMethodPaneLastFour%22%3A%221234%22%2C%22payMethodPanePayMethodName%22%3A%22Visa%22%2C%22payMethodPanePurchaseOrder%22%3A%22%22%2C%22payMethodPanePurchaseOrderNewCustomer%22%3A%22%22%2C%22payMethodPaneCVV%22%3A%22100%22%2C%22creditcardPaymentAllowed%22%3Atrue%2C%22billMeLaterStage%22%3A%22%22%2C%22BMLPaymentAllowed%22%3Afalse%2C%22displayBMLPromotion%22%3Afalse%2C%22POPaymentAllowed%22%3Afalse%2C%22promoType%22%3A%22%22%2C%22promoCode%22%3A%22%22%2C%22sourceCode%22%3A%22INETSRC%22%2C%22sourceCodeDescription%22%3A%22%22%2C%22sourceCodeCartDisplayText%22%3A%22%22%2C%22GIFTCARDCODE1%22%3A%22%22%2C%22GIFTCARDPIN1%22%3A%22%22%2C%22GIFTCARDUSED1%22%3A%22%22%2C%22GIFTCARDCODE2%22%3A%22%22%2C%22GIFTCARDPIN2%22%3A%22%22%2C%22GIFTCARDUSED2%22%3A%22%22%2C%22GIFTCARDCODE3%22%3A%22%22%2C%22GIFTCARDPIN3%22%3A%22%22%2C%22GIFTCARDUSED3%22%3A%22%22%2C%22GIFTCARDCODE4%22%3A%22%22%2C%22GIFTCARDPIN4%22%3A%22%22%2C%22GIFTCARDUSED4%22%3A%22%22%2C%22GIFTCARDCODE5%22%3A%22%22%2C%22GIFTCARDPIN5%22%3A%22%22%2C%22GIFTCARDUSED5%22%3A%22%22%2C%22rewardBarCode%22%3A%22%22%2C%22giftCardsEmpty%22%3Atrue%2C%22sourceCodesEmpty%22%3Atrue%2C%22emptyCart%22%3Afalse%2C%22ContingencyQueue%22%3A%22%22%2C%22lgr%22%3A%22kPWo%2B3EXVu7HUURTQ7jHUNFlGRZezsIMXBmuuF%2FBT4y4XtMFiPjEqw%3D%3D%22%2C%22displayEmailOptIn%22%3Afalse%2C%22billSubscribeEmail%22%3Afalse%2C%22billReceiveNewsletter%22%3Afalse%2C%22billFavoriteTeams%22%3Afalse%2C%22paypalEmailAddress%22%3A%22%22%2C%22displaySheerIdIframe%22%3Atrue%2C%22displayCmsEntry%22%3A%22%22%2C%22payMethodPaneUserGotStoredCC%22%3Afalse%2C%22payMethodPaneHasStoredCC%22%3Afalse%2C%22payMethodPaneUsedStoredCC%22%3Afalse%2C%22payMethodPaneSavedNewCC%22%3Afalse%2C%22selectedCreditCard%22%3A%7B%7D%2C%22payMethodPaneHasCVV%22%3Atrue%2C%22payMethodPaneCVVAF%22%3A%220%22%7D&requestKey=1769A94457D9uFA0&hbg=ig%2Bo8fott1HNzHfZ7s5E3DwceH%2BoidAZkIDI40ZsfwcNq49ytx2jvsqgDSiT7~~~n%2BI6L9mQEHmO7p%0D%0AvhfmXvCg6A%3D%3D&addressBookEnabled=true&bb_device_id=&loginHeaderEmailAddress=&loginHeaderPassword=&loginPaneNewEmailAddress=&loginPaneConfirmNewEmailAddress=&loginPaneEmailAddress=&loginPanePassword=&billAddressType=new&billAddressInputType=single&billAPOFPOCountry=US&bill-country=US&billMyAddressBookIndex=-1&bill-fname=asdf&bill-lname=fdsa&bill-address1=23+asdf&bill-address2=&bill-postal=12345&bill-city=SCHENECTADY&billAPOFPO-region=&bill-state=NY&bill-province=&billAPOFPO-state=&billAPOFPO-postal=&bill-tel=650+912+3456&email=asf%40as.com&billConfirmEmail=asf%40as.com&billPaneShipToBillingAddress=true&shipAddressType=different&shipAddressInputType=single&shipAPOFPOCountry=US&ship-country=US&shipMyAddressBookIndex=-1&shipToStore=false&ship-fname=&ship-lname=&ship-address1=&ship-address2=&ship-postal=&ship-city=&shipAPOFPO-region=&ship-state=&ship-province=&shipAPOFPO-state=&shipAPOFPO-postal=&ship-tel=&shipMethodCodeS2S=&shipMethodCode=Z&storePickupInputPostalCode=&promoType=&CPCOrSourceCode=&payMethodPanePayType=CC&payMethodPanestoredCCCardNumber=CC&CardNumber=4190+0293+1234+1234&CardExpireDateMM=01&CardExpireDateYY=21&CardCCV=&payMethodPaneStoredType=&payMethodPaneConfirmCardNumber=&payMethodPaneStoredCCExpireMonth=&payMethodPaneStoredCCExpireYear=&payMethodPaneCardType=visa&payMethodPaneCardNumber=4190029312341234&payMethodPaneExpireMonth=01&payMethodPaneExpireYear=21&payMethodPaneCVV=&payMethodPaneStoredCCCVV=&giftCardCode_1=&giftCardPin_1=&fieldCount=1&billMobilePhone=
+
+
+5/8 checkout:
+
+POST URL: 'https://www.footlocker.com/checkout/orderReceipt'
+
+form data:
+verifiedCheckoutData:{"maxVisitedPane":"orderReviewPane","billMyAddressBookIndex":"-1","addressNeedsVerification":false,"billFirstName":"glans","billLastName":"shmegmar","billAddress1":"2247 sheridan","billAddress2":"","billCity":"EVANSTON","billState":"IL","billProvince":"","billPostalCode":"60201","billHomePhone":"612 341 2362","billMobilePhone":"","billCountry":"US","billEmailAddress":"shmeggyguy@gmail.com","billConfirmEmail":"shmeggyguy@gmail.com","billAddrIsPhysical":true,"billSubscribePhone":false,"billAbbreviatedAddress":false,"shipUpdateDefaultAddress":false,"VIPNumber":"","accountBillAddress":{"billMyAddressBookIndex":-1},"selectedBillAddress":{},"billMyAddressBook":[],"updateBillingForBML":false,"shipMyAddressBookIndex":-1,"useBillingAsShipping":true,"shipFirstName":"glans","shipLastName":"shmegmar","shipAddress1":"2247 sheridan","shipAddress2":"","shipCity":"EVANSTON","shipState":"IL","shipProvince":"","shipPostalCode":"60201","shipHomePhone":"612 341 2362","shipMobilePhone":"","shipCountry":"US","shipHash":"DE1D864359545ED1211834561ED947AC","shipMultiple":false,"isShipToStoreEligibleCheckout":true,"shipToStore":false,"isMultipleAddressEligible":false,"shipAbbreviatedAddress":false,"selectedStore":{},"accountShipAddress":{"shipMyAddressBookIndex":-1},"selectedShipAddress":{},"shipMyAddressBook":[],"shipMethodCode":"Z","shipMethodName":"5-6 Business Days","shipMethodPrice":"$0.00","shipDeliveryEstimate":"","shipMethodCodeSDD":"","shipMethodNameSDD":"","shipMethodPriceSDD":"$0.00","shipDeliveryEstimateSDD":"","shipMethodCodeS2S":"","shipMethodNameS2S":"","shipMethodPriceS2S":"$0.00","shipDeliveryEstimateS2S":"","shipMethodCodeSFS":"","shipMethodNameSFS":"","shipMethodPriceSFS":"$0.00","shipDeliveryEstimateSFS":"","homeDeliveryPrice":"$0.00","overallHomeDeliveryPrice":"$0.00","aggregatedDeliveryPrice":"FREE","aggregatedDeliveryLabel":"","showGiftBoxOption":true,"addGiftBox":false,"giftBoxPrice":"$3.99","useGiftReceipt":false,"showGiftOptions":true,"loyaltyMessageText":false,"showLoyaltyRenewalMessage":false,"pickupPersonFirstName":"glans","pickupPersonLastName":"shmegmar","preferredLanguage":"","advanceToConfirm":false,"payType":"CREDIT_CARD","payPalToken":"","payPalInContext":true,"payPalMerchantId":"","payPalStage":"","payPalPaymentAllowed":true,"payMethodPaneExpireMonth":"01","payMethodPaneExpireYear":"21","payMethodPaneCardNumber":"4802139007603697","payMethodPaneCardType":"visa","payMethodPaneLastFour":"3697","payMethodPanePayMethodName":"Visa","payMethodPanePurchaseOrder":"","payMethodPanePurchaseOrderNewCustomer":"","payMethodPaneCVV":"101","creditcardPaymentAllowed":true,"billMeLaterStage":"","BMLPaymentAllowed":false,"displayBMLPromotion":false,"POPaymentAllowed":false,"promoType":"","promoCode":"","sourceCode":"INETSRC","sourceCodeDescription":"","sourceCodeCartDisplayText":"","GIFTCARDCODE1":"","GIFTCARDPIN1":"","GIFTCARDUSED1":"","GIFTCARDCODE2":"","GIFTCARDPIN2":"","GIFTCARDUSED2":"","GIFTCARDCODE3":"","GIFTCARDPIN3":"","GIFTCARDUSED3":"","GIFTCARDCODE4":"","GIFTCARDPIN4":"","GIFTCARDUSED4":"","GIFTCARDCODE5":"","GIFTCARDPIN5":"","GIFTCARDUSED5":"","giftCardsEmpty":true,"sourceCodesEmpty":true,"emptyCart":false,"ContingencyQueue":"","lgr":"45m7ayX5NLXBpg7x5RgoZ9FlGRZezsIMesHHbUn95JQmLJ6uZG8LGA==","displayEmailOptIn":false,"billSubscribeEmail":false,"billReceiveNewsletter":false,"billFavoriteTeams":false,"paypalEmailAddress":"","displaySheerIdIframe":true,"displayCmsEntry":"","payMethodPaneUserGotStoredCC":false,"payMethodPaneHasStoredCC":false,"payMethodPaneUsedStoredCC":false,"payMethodPaneSavedNewCC":false,"selectedCreditCard":{},"payMethodPaneHasCVV":true,"payMethodPaneCVVAF":"0"}
+hbg:4pRwZkNlEJO1sC2HNdAmewN6wtpF24zr+RZYVTnF5CJgN1414Jm1gB5D9ZGc3UUme19BjB5zWiuD
+K7F6CbXV8w==
+addressBookEnabled:true
+bb_device_id:0400bpNfiPCR/AUNf94lis1ztjbaCjtwdIzBnrp/XmcfWoVVgr+Rt2dAZIo7BJIRIWDNf0dFpDbITSTXnfra5uHnD42fRE9PMD+Q3FCX9pS6pa9J27cNnYPSQUyAZ5slTMaJloqK68LbvUgxBKqzrSkuy0N13n2vmAeykQgdlVeDidx1G2mpGiKJ4Ao5VNMvaDXf7E1Pf46IvXtYdEyMOakFzprLKk3u1s0IOuzw5mXZ8AItfL4Q3gK1brAcesNbcdJjGc+x7ZkkKyrh7d/W78RPOnlWmCRBdNDNnZsKRSTH+IP51Yr1X1pfxni4EoXCCG/kTn3Cs8SNRaHmY1XpDGBtyepPcth3j49FDjfNAKE20gn/OoEquJb3qRpUjLOh6OGkv/gSndVgc30suBB71pCFJmBFxz712wSfHcBz194NcXTb8RzWdzZK4RpNGfQbU0JloLV9sr09CfV04hiAcL/dBjV9nBJW1Y3JLACqjtcRnAu+xcMhBad5MO9RJsn4u3PdHf7WUtiodkQ+vrmhwTP0hvb4KKLSo9eeXEGNmFnOMEopQs/EGzmZLzfvGVm2x1Z8OcB6qtccp8c6g+y1xG8NfgQxSxzPuRtycb0H5IjHkCcKSs4KVYKB4uYIYqgI7Dm2GjAaoRd6PKL6yc/35JaHDBCMfMWaNkLbHf4N3pIo1yRotdN2IB2GdUSbKa7pIYApOaKgIv3sbV/sTU9/joi9e1h0TIw5qQXOmssqTe7WzQg67PDmZdnwAi18vhDeArVusBx6w1tx0mMZz7HtmSQrKuHt39bvxE86eVaYJEF00M2dmwpFJMf4g/nVivVfWl/GeLgShcIIb+ROfcKzxI1FoeZjVekMYG3JYXyFHBbsmyyzb0vSwWRA+eSMeWgCk0M8kgQVobtOy5nu7pRmssxc1n3Rzh1ozHM1w5rNRhjMFvlSwejOX5dhKGYrsu13rc4RCbryu9G8AaRxi/UgQBHzxwUkaRoD62ZVKAJokj6EGxBwEOVYYCXWisGTdzs7sGqD/4VCmY+lyZjWXQSualuG9VWlnZeyodhy3RFAaVrFhh1QBGWHkSj6I8FG726x4oc3h5fL+Wl9/XOBhEJQVyeCxz7VODIlvxOXfqYAndlMe7bdZoUxykO48vWDDY6js4EV55FTSZBNQWsPOiZrP2SiOWzybLfWtqZlrcJpahBcCZfnI/+og+dAj4zyVekwhI5/tPvXfQEg+KLRVsDNUznM+4IlRQO86SD0OIS7LH591kg7Q92FGKueuxRQDekNcfNFHQnRncqsMG12Hj2lPPDtzNhejcFMJfaG384Z/eHbzKReIGqn/AvxVz5FyPOJeX9tPSwOeX3qvJy51LpqEcj34bGphQzAfpCdhS/TMDPZy+2C+ZC/uhKlHkUfJUXn70ruuPbFXMdhYQXCHZMUoHtIPePeGWdDup2Qx6clTWo1b0LXH4F8LSk1R6QbfGrMf1FVVSaircwUTU76P+yrUaSrNVK1IZLI9vhXng3W5y0c5RCPGciXaz8dkMuac5WKPSHI9GsuhUkltJg=
+loginHeaderEmailAddress:
+loginHeaderPassword:
+loginPaneNewEmailAddress:
+loginPaneConfirmNewEmailAddress:
+loginPaneEmailAddress:
+loginPanePassword:
+billAddressType:new
+billAddressInputType:single
+billAPOFPOCountry:US
+bill-country:US
+billMyAddressBookIndex:-1
+bill-fname:glans
+bill-lname:shmegmar
+bill-address1:2247 sheridan
+bill-address2:
+bill-postal:60201
+bill-city:EVANSTON
+billAPOFPO-region:
+bill-state:IL
+bill-province:
+billAPOFPO-state:
+billAPOFPO-postal:
+bill-tel:612 341 2362
+email:shmeggyguy@gmail.com
+billConfirmEmail:shmeggyguy@gmail.com
+billPaneShipToBillingAddress:true
+shipAddressType:different
+shipAddressInputType:single
+shipAPOFPOCountry:US
+ship-country:US
+shipMyAddressBookIndex:-1
+shipToStore:false
+ship-fname:
+ship-lname:
+ship-address1:
+ship-address2:
+ship-postal:
+ship-city:
+shipAPOFPO-region:
+ship-state:
+ship-province:
+shipAPOFPO-state:
+shipAPOFPO-postal:
+ship-tel:
+shipMethodCodeS2S:
+shipMethodCode:Z
+storePickupInputPostalCode:
+promoType:
+CPCOrSourceCode:
+payMethodPanePayType:CC
+payMethodPanestoredCCCardNumber:CC
+CardNumber:4802 1390 0760 3697
+CardExpireDateMM:01
+CardExpireDateYY:21
+CardCCV:
+payMethodPaneStoredType:
+payMethodPaneConfirmCardNumber:
+payMethodPaneStoredCCExpireMonth:
+payMethodPaneStoredCCExpireYear:
+payMethodPaneCardType:visa
+payMethodPaneCardNumber:4802139007603697
+payMethodPaneExpireMonth:01
+payMethodPaneExpireYear:21
+payMethodPaneCVV:
+payMethodPaneStoredCCCVV:
+giftCardCode_1:
+giftCardPin_1:
+fieldCount:1
+billMobilePhone:
+requestKey:33081714312133140546969
+cartCode:33081714312133140546969
+webCustomerId:110632164
